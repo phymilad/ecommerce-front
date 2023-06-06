@@ -1,4 +1,5 @@
 // variables and functions
+@import 'functions';
 @import 'variables';
 
 // base and layout
@@ -8,9 +9,9 @@
 @import 'colors';
 
 // components (button, card, navbar)
-@import './components/client-header.scss'
+@import './components/client-header.scss';
 
 // utilities (margin, padding, opacity)
-
+@import './utilities'
 
 
