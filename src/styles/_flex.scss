@@ -1,0 +1,26 @@
+$justify-values: (
+  "fs": flex-start,
+  "fe": flex-end,
+  "c": center,
+  "sb": space-between,
+  "sa": space-around,
+  "se": space-evenly,
+);
+$align-values: (
+  "c": center,
+  "s": start,
+  "e": end,
+  "fs": flex-start,
+  "fe": flex-end,
+);
+
+@each $key, $val in $justify-values {
+  .justify-#{$key} > * {
+    justify-content: $val;
+  }
+}
+@each $key, $val in $align-values {
+  .align-#{$key} > * {
+    align-content: $val;
+  }
+}
