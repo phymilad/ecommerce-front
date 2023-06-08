@@ -13,8 +13,7 @@
 
 // components (button, card, navbar)
 @import './components/client-header.scss';
+@import './components/client/client-navbar.scss';
 
 // utilities (margin, padding, opacity)
-@import './utilities'
-
-
+@import './utilities';

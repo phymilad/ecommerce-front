@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { AdminRoutes } from './pages/admin/AdminRoutes'
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home /> } />
+        <Route path='/' element={<Navigate to="/client" replace />}/>
         <Route path='/client' element={<Home /> } />
         <Route path='/admin/*' element={<AdminRoutes /> } />
         <Route />

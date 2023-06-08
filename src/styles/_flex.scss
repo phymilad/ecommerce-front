@@ -15,12 +15,12 @@ $align-values: (
 );
 
 @each $key, $val in $justify-values {
-  .justify-#{$key} > * {
+  .justify-#{$key} {
     justify-content: $val;
   }
 }
 @each $key, $val in $align-values {
-  .align-#{$key} > * {
+  .align-#{$key} {
     align-content: $val;
   }
 }
